@@ -10,7 +10,8 @@ namespace GuessNumberGame.Services
     {
         public void WriteLine(string message)
         {
-            throw new NotImplementedException();
+            var currentTime = DateTime.Now.ToShortTimeString();
+            Console.WriteLine($"{currentTime}: {message}");
         }
     }
 }

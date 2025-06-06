@@ -10,7 +10,8 @@ namespace GuessNumberGame.Services
     {
         public int Generate(int min, int max)
         {
-            throw new NotImplementedException();
+            var rnd = new Random();
+            return rnd.Next(min, max);
         }
     }
 }
